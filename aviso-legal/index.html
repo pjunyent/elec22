@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <title>PABLO JUNYENT | EL CANDIDATO</title>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="description" content="Página del candidato Pablo Junyent Hernández a las Elecciones de Claustro Universitario Facultad de Ciencias Matemáticas de la UCM (Universidad Complutense de Madrid)">
+    <meta name="keywords" content="Pablo, Junyent, Hernández, Pablo Junyent, Pablo Junyent Hernández, elecciones, elecciones claustro, elecciones junta, Facultad de CC. Matemáticas, Facultad Matemáticas, Facultad de Matemáticas, Universidad Complutense, Complutense, Matemáticas, 6 de abril"> 
+    <style>
+        html, body {
+            background-color: rgb(255, 255, 255);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        @media only screen and (max-width: 768px) {
+            a {
+            color: rgba(156, 0, 0, 0);
+            text-decoration: none;
+            }
+            .banner {
+                color: rgba(0, 0, 0, 0);
+                background-color: rgba(255, 255, 255, 0);
+                position: fixed;
+                top: 0;
+                left: 0;
+                padding: 0;
+                width: 0;
+                pointer-events: none;
+            }
+            .banner-logo {
+                display: none;
+                position: relative;
+                left: -30vw;
+                width: 12%;
+                height: auto;
+            }
+            .banner-button1 {
+                color: rgba(156, 0, 0, 0);
+                background-color: rgba(255, 255, 255, 0);
+                padding: 0%;
+                margin: 0;
+                
+            }
+            .banner-button2 {
+                color: rgb(255, 255, 255);
+                background-color: rgba(218, 0, 0, 0);
+                padding: 0;
+                margin: 0;
+            }
+            .banner-button2 a {
+                color: rgba(255, 255, 255, 0);
+            }
+            .bannermov {
+                background-color: rgb(156, 0, 0);
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                z-index: 1000000;
+            }
+            .bannermov-button1 {
+                position: relative;
+                display: inline-block;
+            }
+            .dropbtn {
+                display: none;
+            }
+            label img {
+                display: inline-block;
+                width: 30%;
+                height: auto;
+                padding-top: 5%;
+                padding-left: 5%;
+                padding-bottom: -8%;
+            }
+            label span{
+                display: inline-block;
+                align-items: center;
+                position: relative;
+                right: -40vw;
+                top: -1vw;
+                font-size: 10vw;
+                font-weight: bold;
+                color: rgb(255, 255, 255);
+                padding: 5%;
+            }
+            #demo:checked + label span {
+                right: -40vw;
+                top: -1vw;
+            }
+            label a {
+                color: rgba(0, 0, 0, 0);
+                background-color: rgba(0, 0, 0, 0);
+                display: none;
+                pointer-events: none;
+                display: none;
+            }
+            #demo:checked + label a{
+                color: rgb(255, 255, 255);
+                background-color: rgb(156, 0, 0);
+                display: flex;
+                pointer-events: all;
+                flex-direction: column;
+                align-items: center;
+                font-size: 5vw;
+                padding-bottom: 5%;
+            }
+            .banner3 {
+                background-color: rgb(156, 156, 156);
+                position: relative;    
+                max-width: 90%;
+                margin: 0 auto;
+                margin-top: 25%;
+                display: flex;
+                flex-direction: column;
+                z-index: 10;
+            }
+            .subanner3 {
+                padding: 4%;
+                padding-left: 5%;
+                padding-right: 5%;
+                background: url(../photos/g5491.png) no-repeat 95% 50%;
+                -webkit-background-size: 25%;
+                -moz-background-size: 25%;
+                -o-background-size: 25%;
+                background-size: 25%;
+            }
+            .b3text1 {
+                color: rgb(156, 0, 0);
+                font-weight: bold;
+                font-size: 4.5vw;
+                
+            }
+            .b3text2 {
+                color: rgb(0, 0, 0);
+                font-size: 4vw;
+                padding: 2%;
+                text-align: justify;
+            }
+            .banner4 {
+                background-color: rgb(156, 0, 0);
+                position: relative;
+                display: flex;
+                padding: 0;
+                margin: 0;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-top: -2%;
+                z-index: 2;
+            }
+            .b4block1 {
+                background-color: rgb(0, 80, 126);
+                width: 25%;
+                margin: 1%;
+                margin-top: 5%;
+            }
+            
+            .b4text1 {
+                color: rgb(255, 255, 255);
+                padding: 5%;
+                font-size: 3.5vw;
+            }
+            .b4block2 {
+                width: 50%;
+                margin: 1%;
+                margin-left: 5%;
+            }
+            .b4text2 {
+                color: rgb(255, 255, 255);
+                font-size: 5vw;
+                font-weight: bold;
+            }
+            .b4text3 {
+                color: rgb(255, 255, 255);
+                font-size: 2vw;
+                padding-top: 5%;
+                text-align: justify;
+            }
+            .banner6 {
+                background-color: rgb(112, 0, 0);
+                max-width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            .b6text1 {
+                padding: 1%;
+                font-weight: bold;
+            }
+        }
+        @media only screen and (min-width: 768px) {
+            a {
+            color: rgb(156, 0, 0);
+            text-decoration: none;
+            font-size: 1vw;
+            }
+            .banner {
+                color: rgb(0, 0, 0);
+                background-color: rgb(255, 255, 255);
+                position: fixed;
+                top: 0;
+                left: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                padding: 1%;
+                width: 100%;
+                margin: 0 auto;
+                align-items: center;
+                z-index: 1000;
+            }
+            .banner-logo {
+                position: relative;
+                left: -30vw;
+                width: 12%;
+                height: auto;
+            }
+            .banner-button1 {
+                color: rgba(156, 0, 0, 0.877);
+                background-color: rgba(0, 0, 0, 0);
+                padding: 0.5%;
+                font-size: 1vw;
+                font-weight: bold;
+                
+            }
+            .banner-button2 {
+                color: rgb(255, 255, 255);
+                background-color: rgb(218, 0, 0);
+                padding: 0.5%;
+                padding-left: 2%;
+                padding-right: 2%;
+                margin-left: 2vw;
+                margin-right: 3vw;
+                font-size: 1vw;
+                font-weight: bold;
+            }
+            .banner-button2 a {
+                color: rgb(255, 255, 255);
+            }
+            .bannermov-button1 label a{
+                color: rgba(0, 0, 0, 0);
+                background-color: rgba(0, 0, 0, 0);
+                pointer-events: none;
+                user-select: none;
+            }
+            .bannermov {
+                color: rgba(0, 0, 0, 0);
+                background-color: rgba(255, 255, 255, 0);
+                position: fixed;
+                top: 0;
+                left: 0;
+                padding: 0;
+                width: 0;
+                pointer-events: none;
+                user-select: none;
+            }
+            .banner-button1 {
+                color: rgba(0, 0, 0, 0);
+                background-color: rgba(0, 0, 0, 0);
+            }
+            label img {
+                display: none;
+                width: 30%;
+                height: auto;
+                padding-top: 5%;
+                padding-left: 5%;
+                padding-bottom: -8%;
+            }
+            .bannermov-button2 {
+                color: rgba(0, 0, 0, 0);
+                background-color: rgba(0, 0, 0, 0);
+            }
+            .bannermov-button2 a {
+                color: rgba(0, 0, 0, 0);
+                background-color: rgba(0, 0, 0, 0);
+            }
+            .banner3 {
+                background-color: rgb(156, 156, 156);
+                position: relative;    
+                max-width: 60%;
+                margin: 0 auto;
+                margin-top: 8%;
+                display: flex;
+                flex-direction: column;
+                z-index: 10;
+            }
+            .subanner3 {
+                padding: 4%;
+                padding-left: 5%;
+                padding-right: 5%;
+                background: url(../photos/g5491.png) no-repeat 95% 50%;
+                -webkit-background-size: 25%;
+                -moz-background-size: 25%;
+                -o-background-size: 25%;
+                background-size: 25%;
+            }
+            .b3text1 {
+                color: rgb(156, 0, 0);
+                font-weight: bold;
+                font-size: 1vw;
+                
+            }
+            .b3text2 {
+                color: rgb(0, 0, 0);
+                font-size: 1vw;
+                padding: 2%;
+                text-align: justify;
+            }
+            .banner4 {
+                background-color: rgb(156, 0, 0);
+                position: relative;
+                display: flex;
+                padding: 0;
+                margin: 0;
+                flex-direction: row;
+                align-items: center;
+                justify-content: normal;
+                margin-top: -2%;
+                z-index: 2;
+            }
+            .b4block1 {
+                background-color: rgb(0, 80, 126);
+                width: 16%;
+                margin: 1%;
+                margin-top: 5%;
+            }
+            
+            .b4text1 {
+                color: rgb(255, 255, 255);
+                padding: 5%;
+                font-size: 2vw;
+            }
+            .b4block2 {
+                width: 30%;
+                margin: 1%;
+                margin-left: 5%;
+            }
+            .b4text2 {
+                color: rgb(255, 255, 255);
+                padding: 2%;
+                font-size: 1vw;
+                font-weight: bold;
+            }
+            .b4text3 {
+                color: rgb(255, 255, 255);
+                font-size: 1vw;
+                padding-top: 5%;
+                text-align: justify;
+            }
+            .banner6 {
+                background-color: rgb(112, 0, 0);
+                max-width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+            }
+            .b6text1 {
+                padding: 1%;
+                font-weight: bold;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <img class="banner-logo" src="../photos/logo.svg">
+        <div class="banner-button1"><a href="../index.html">INICIO</a></div>
+        <div class="banner-button1"><a href="../el-candidato/index.html">EL CANDIDATO</a></div>
+        <div class="banner-button1"><a href="../claustro-y-junta/index.html">CLAUSTRO Y JUNTA</a></div>
+        <div class="banner-button1"><a href="../propuestas/index.html">PROPUESTAS</a></div>
+        <div class="banner-button2"><a href="../como-votar/index.html">¿CÓMO VOTAR?</a></div>
+    </div>
+    <div class="bannermov">
+        <div class="bannermov-button1">
+            <input class="dropbtn" type="checkbox" id="demo"></input>
+            <label for="demo">
+                <img src="../photos/logo.svg">
+                <span>≡</span>
+                <a href="../index.html">INICIO</a>
+                <a href="../el-candidato/index.html">EL CANDIDATO</a>
+                <a href="../claustro-y-junta/index.html">CLAUSTRO Y JUNTA</a>
+                <a href="../propuestas/index.html">PROPUESTAS</a>
+                <a href="../como-votar/index.html">¿CÓMO VOTAR?</a>
+            </label>
+        </div>
+    </div>
+    <div class="banner3">
+        <div class="subanner3">
+            <div class="b3text1">AVISO LEGAL Y CONDICIONES DE ACCESO</div>
+            <div class="b3text2">
+                <ol>
+                    <li>DATOS IDENTIFICATIVOS: El presente sitio web es propiedad de Pablo Junyent Hernández, que, a efectos de comunicaciones, señala el siguiente correo electrónico: pjunyent@ucm.es, así como la siguiente dirección a efectos de notificaciones postales: C/Real de San Juan n.º 51, Las Palmas de G.C., 35015</li>
+                    <li>USUARIOS: El acceso a esta página web le atribuye la condición de USUARIO aceptando y quedando obligado por este aviso legal.</li>
+                    <li>USO: El USUARIO se compromete a hacer un uso responsable y racional de esta web.</li>
+                    <li>PROPIEDAD INTELECTUAL E INDUSTRIAL: TODOS LOS DERECHOS RESERVADOS. Pablo Junyent Hernández es la titular y propietario de todos los derechos de propiedad intelectual e industrial recogidos en esta página, con excepción de aquellos que se encuentren en el dominio público.
+                        En consecuencia, queda estrictamente prohibida, de conformidad con los artículos 8 y 32.1 del TR de la Ley de Propiedad Intelectual, la reproducción, redistribución y comunicación pública, inclusive la puesta a disposición, de la totalidad o parte de los contenidos aquí recogidos sujetos al derecho de propiedad intelectual, sin autorización previa.
+                    </li>
+                    <li>EXCLUSIÓN DE GARANTÍAS Y RESPONSABILIDAD: El titular no se hace responsable, en ningún caso, de los daños y perjuicios de cualquier naturaleza que pudieran ocasionar, a título enunciativo, errores u omisiones en los contenidos, falta de disponibilidad del portal o la transmisión de virus o programas maliciosos o lesivos en los contenidos, a pesar de haber adoptado todas las medidas tecnológicas necesarias para evitarlo.</li>
+                    <li>MODIFICACIONES: El titular se reserva el derecho de efectuar sin previo aviso las modificaciones que considere oportunas en este sitio web, pudiendo cambiar, suprimir o añadir tanto los contenidos y servicios que se presten a través del mismo así como la forma en la que éstos aparezcan presentados o localizados en el sitio.</li>
+                    <li>ENLACES: En el caso de que en el sitio se dispusiesen enlaces o hipervínculos hacía otros sitios de Internet, el titular no ejercerá ningún tipo de control sobre dichos sitios y contenidos. En ningún caso el titular asumirá responsabilidad alguna por los contenidos de algún enlace perteneciente a un sitio web ajeno, ni garantizará la disponibilidad técnica, calidad, fiabilidad, exactitud, amplitud, veracidad, validez y constitucionalidad de cualquier material o información contenida en ninguno de dichos hipervínculos u otros sitios de Internet. Igualmente la inclusión de estas conexiones externas no implicará ningún tipo de asociación, fusión o participación con las entidades conectadas.</li>
+                    <li>DERECHO DE EXCLUSIÓN: El titular se reserva el derecho a denegar o retirar el acceso a su sitio y/o los servicios ofrecidos sin necesidad de preaviso, a instancia propia o de un tercero, a aquellos usuarios que incumplan este Aviso Legal.</li>
+                    <li>COOKIES: El presente sitio no hace uso de cookies web.</li>
+                    <li>GENERALIDADES: El titular perseguirá el incumplimiento del presente aviso así como cualquier utilización indebida del sitio ejerciendo todas las acciones civiles y penales que le puedan corresponder conforme a derecho.</li>
+                    <li>MODIFICACIÓN DEL PRESENTE AVISO Y DURACIÓN: El titular podrá modificar en cualquier momento las condiciones aquí determinadas, siendo debidamente publicadas como aquí aparecen. La vigencia de las citadas condiciones irá en función de su exposición y estarán vigentes hasta que sean modificadas por otras debidamente publicadas.</li>
+                </ol>
+            </div>
+            <div class="b3text1">POLÍTICA DE PRIVACIDAD</div>
+            <div class="b3text2">
+                <ol>
+                    <li>DATOS IDENTIFICATIVOS DEL RESPONSABLE: En cumplimiento de la normativa europea y española en materia de protección de datos se le informa que el titular del tratamiento de los datos recogidos por esta página es el señalado en el punto 1. del Aviso Legal.</li>
+                    <li>USUARIOS: Es usuario, se encuentra sujeto y acepta esta política todo aquel que sea usuario de conformidad con el punto 2. del Aviso.</li>
+                    <li>EJERCICIO DE DERECHOS EN MATERIA DE PROTECCIÓN DE DATOS: El usuario podrá, en cualquier momento, ponerse en contacto con el titular por vía postal para ejercer sus derechos relativos a la protección de datos, de conformidad con la legislación vigente. Sin perjuicio de lo anterior, se recuerda al usuario que puede interponer, igualmente, reclamaciones ante la AEPD.</li>
+                    <li>FINALIDADES DEL TRATAMIENTO: Los datos facilitados por el usuario se emplean para facilitarle un servicio personalizado, gestionar los servicios de esta web, así como diseñar otros nuevos.</li>
+                    <li>TIPOS DE DATOS RECOGIDOS: correo electrónico o email (suministrados por el usuario).</li>
+                    <li>DATOS CEDIDOS A TERCEROS: El titular no cederá datos a terceros, salvo por causa jurídica legítima y/o obligación legal.</li>
+                    <li>MENORES DE EDAD: Queda autorizado el acceso a la presente web por parte de menores de edad que cursen estudios superiores en la Facultad de CC. Matemáticas de la UCM.</li>
+                    <li>PLAZO DE CONSERVACIÓN DE LOS DATOS: Los datos serán conservados y tratados de forma activa mientras se ostente la condición de usuario de esta web, es decir, salvo que se ejerza el oportuno derecho de supresión. En caso de hacerlo, los datos se conservarán por un plazo de 5 años, de forma reservada y restringida a disposición de las autoridades legalmente amparadas para requerirlos.</li>
+                    <li>LEGITIMACIÓN DEL TRATAMIENTO: El titular realiza el tratamiento amparado por el interés legítimo legalmente reconocido para proveer este web y su información.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="banner4">
+        <div class="b4text2">
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="banner6">
+        <div class="b6text1"><a style="color: rgb(255, 255, 255);" href="./index.html">Aviso Legal</a></div>
+        <div class="b6text1"><a style="color: rgb(255, 255, 255);" href="../contacto/index.html">Contacto</a></div>
+    </div>
+</body>
+</html>
